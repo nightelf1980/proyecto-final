@@ -36,7 +36,7 @@ body{
     .grid-container{
         display: grid;
         grid-template-columns: 1fr; /* 1 columna */
-        grid-template-rows: 235px 300px 300px auto; /* 4 filas navbar banner main footer */
+        grid-template-rows: 235px 200px 300px auto; /* 4 filas navbar banner main footer */
     }
 
     .navbar{
@@ -94,7 +94,7 @@ body{
     .banner{
         grid-row: 2;
         background-image: url(../img/css.png);
-        height: 300px;
+        height: 200px;
         background-position: center center;
         background-size: cover;
         display: flex;
@@ -108,7 +108,7 @@ body{
     .banner-diseno{
         grid-row: 2;
         background-image: url(../img/diseno-web.png);
-        height: 300px;
+        height: 200px;
         background-position: center center;
         background-size: cover;
         display: flex;
@@ -122,7 +122,7 @@ body{
     .banner-hosting{
         grid-row: 2;
         background-image: url(../img/hosting.png);
-        height: 300px;
+        height: 200px;
         background-position: center center;
         background-size: cover;
         display: flex;
@@ -136,7 +136,7 @@ body{
     .banner-clientes{
         grid-row: 2;
         background-image: url(../img/background-clientes.png);
-        height: 300px;
+        height: 200px;
         background-position: center center;
         background-size: cover;
         display: flex;
