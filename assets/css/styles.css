@@ -1,0 +1,1231 @@
+/*  Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Colores */
+
+:root{
+    --color1:#a9dfff;
+    --color2:#F652A0;
+    --color3:#ffd700;
+    --color4:#fbfbfb;
+    --color5:#90ee90;
+    --color6:#000000;
+    --color7:#424242;
+}
+
+/* Propiedades del body  */
+
+body{
+        min-height: 100vh;
+        font-family: 'Roboto', sans-serif;
+}
+
+/****************VISTA MÓVIL - RESOLUCIÓN PANTALLA HASTA 719px******************************/
+
+@media (max-width: 719px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        grid-template-rows: 235px 300px 300px auto; /* 4 filas navbar banner main footer */
+    }
+
+    .navbar{
+        grid-row: 1;
+        width: 100%;
+        height: 100vh;
+        background-color:var(--color6);
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        /* position: sticky;
+        top: 0;
+        z-index: 100; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        overflow: hidden;
+        font-size: 15px;
+    }
+
+    .navbar ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        padding: 5px;
+        color:var(--color4)
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: var(--color4);
+    }
+
+    .navbar ul li:hover{
+        background: var(--color3);
+        transition:.2s;
+    }
+
+    .navbar ul li a:hover{
+        color: var(--color6);
+        transition: 0.3s;
+    }
+
+    .logo img{
+        height: 95px;
+        width: 95px;
+    }
+
+    .banner{
+        grid-row: 2;
+        background-image: url(../img/css.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-diseno{
+        grid-row: 2;
+        background-image: url(../img/diseno-web.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-hosting{
+        grid-row: 2;
+        background-image: url(../img/hosting.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-clientes{
+        grid-row: 2;
+        background-image: url(../img/background-clientes.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-contacto{
+        display: none;
+    }
+
+    .banner h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 1.5rem;
+    }
+
+    .banner-diseno h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 1.5rem;
+    }
+
+    .banner-hosting h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 1.5rem;
+    }
+
+    .banner-clientes h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 1.5rem;
+    }
+
+    .main-content{
+        grid-row: 3;
+        background-color: var(--color3);
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-diseno{
+        grid-row: 3;
+        background-color: var(--color3);
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-hosting{
+        grid-row: 3;
+        background-color: var(--color3);
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-clientes{
+        box-sizing: border-box;
+        grid-row: 3;
+        background-color: var(--color4);
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-contacto{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: var(--color5);
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-contacto form{
+        padding: 10px;
+    }
+
+    .main-content h2{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .main-content p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-diseno h2{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .main-content-diseno p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-hosting h2{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .main-content-hosting p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-clientes img{
+        width: 300px;
+        /* height: 300px; */
+        margin: 10px;
+    }
+
+    /* Propiedades del footer */
+
+    #footer-mapa{
+        grid-row: 4;
+        background-color: var(--color4);
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #footer-lateral-superior{
+        background-color: var(--color4);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-lateral-superior ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #footer-lateral-inferior{
+        background-color: var(--color4);
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #footer-lateral-inferior ul li{
+        padding: 5px;
+    }
+
+    #footer-lateral-inferior ul li a:link, a:visited, a:active{ /* Saca estilos al link */
+        text-decoration: none;
+        color:var(--color6)
+    }
+
+    /* Estilos del formulario de contacto */
+
+    .main-content-contacto{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+        
+    .main-content-contacto *{
+        box-sizing: border-box;
+    }
+        
+    .flex-form{
+        list-style: none;
+        padding: 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+        
+    .flex-form li{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+        
+    .flex-form > li:not(:last-child){
+        margin-bottom: 20px;
+    }
+        
+    .flex-form li label , .flex-form li p{
+        font-size: 14px;
+        padding: 4px;
+        font-weight: 300;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+    }
+        
+    .flex-form > li > label , .flex-form li p{
+        flex: 1 0 120px;
+        max-width: 220px;
+    }
+        
+    .flex-form > li > label + *{
+        flex: 1 0 220px;
+    }
+        
+    .flex-form li p{
+        margin: 0;
+    }
+        
+    .flex-form li input:not([type='checkbox']) , .flex-form li textarea{
+        padding: 15px;
+        border: none;
+    }
+        
+    .flex-form li button{
+        margin-left: auto;
+        padding: 8px 16px;
+        border: none;
+        background:var(--color7);
+        color: var(--color4);
+        text-transform: uppercase;
+        letter-spacing: .09em;
+        border-radius: 2px;
+    }
+
+}
+
+/****************VISTA TABLETA - RESOLUCIÓN PANTALLA ENTRE 720px y 1023px*******************/
+
+@media (min-width: 720px) and (max-width: 1023px){
+
+    .grid-container{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 25% 50% 25%;  /* 3 columnas */
+        grid-template-rows: 300px 200px 200px 200px 200px; /* 5 filas banner main main footer footer */
+    }
+
+    /* Propiedades del navbar */
+    .navbar{
+        background-color: var(--color6);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 6;
+
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .navbar a{
+        text-decoration: none;
+        color: var(--color4);
+        display: inline-block;
+    }
+
+    .navbar ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar li{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .navbar li a{
+        color: var(--color4);
+        display: block;
+        text-decoration: none;
+        padding: .5em 1em;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .navbar li a:hover, li.active{
+        background:var(--color3);
+        color: #000000;
+        transition: .2s;
+        font-style: bold;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img{
+        height: 95px;
+        width: 95px;
+        transition: all 0.5s;
+    }
+
+    /* Propiedades del banner */
+    .banner{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        background-image: url(../img/css.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-diseno{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        background-image: url(../img/diseno-web.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-hosting{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        background-image: url(../img/hosting.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-clientes{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        background-image: url(../img/background-clientes.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-contacto{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        background-image: url(../img/contacto.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2rem;
+    }
+
+    .banner-diseno h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2rem;
+    }
+
+    .banner-hosting h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2rem;
+    }
+
+    .banner-clientes h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2rem;
+    }
+
+    .banner-contacto h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2rem;
+    }
+
+    /* Propiedades del main-content */
+    .main-content{
+        background-color: var(--color4);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-diseno{
+        background-color: var(--color4);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-hosting{
+        background-color: var(--color4);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-clientes{
+        background-color: var(--color4);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-contacto{
+        background-color: var(--color5);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-contacto form{
+        padding: 10px;
+    }
+
+    .main-content h2{
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .main-content p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-diseno h2{
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .main-content-diseno p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-hosting h2{
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .main-content-hosting p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-clientes img{
+        width: auto;
+        height: 300px;
+        margin: 15px;
+    }
+
+    /* Propiedades del footer */
+
+    #footer-mapa{
+        background-color:var(--color4);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start:4;
+        grid-row-end: 6;
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #footer-lateral-superior{
+        background-color:var(--color4);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #footer-lateral-inferior{
+        background-color:var(--color4);
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    #footer-lateral-inferior ul li{
+        width: 100%;
+        padding: 5px;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #footer-lateral-inferior h4{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    #footer-lateral-inferior ul li a:link, a:visited, a:active{ /* Saca estilos al link */
+        text-decoration: none;
+        color:var(--color6)
+    }
+
+    /* Estilos del formulario de contacto */
+
+    .main-content-contacto{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+        
+    .main-content-contacto *{
+        box-sizing: border-box;
+    }
+        
+    .flex-form{
+        list-style: none;
+        padding: 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+        
+    .flex-form li{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+        
+    .flex-form > li:not(:last-child){
+        margin-bottom: 20px;
+    }
+        
+    .flex-form li label , .flex-form li p{
+        font-size: 15px;
+        padding: 4px;
+        font-weight: 300;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+    }
+        
+    .flex-form > li > label , .flex-form li p{
+        flex: 1 0 120px;
+        max-width: 220px;
+    }
+        
+    .flex-form > li > label + *{
+        flex: 1 0 220px;
+    }
+        
+    .flex-form li p{
+        margin: 0;
+    }
+        
+    .flex-form li input:not([type='checkbox']) , .flex-form li textarea{
+        padding: 15px;
+        border: none;
+    }
+        
+    .flex-form li button{
+        margin-left: auto;
+        padding: 8px 16px;
+        border: none;
+        background: var(--color7);
+        color: var(--color4);
+        text-transform: uppercase;
+        letter-spacing: .09em;
+        border-radius: 2px;
+    }
+
+}
+
+
+/****************VISTA ESCRITORIO - RESOLUCIÓN PANTALLA MAYOR O IGUAL A 1024px**************/
+
+@media (min-width: 1024px) {
+
+    .grid-container{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 20% 30% 30% 20%;  /* 4 columnas */
+        grid-template-rows: 99px 300px 400px 200px 200px; /* 5 filas navbar banner main footer footer */
+    }
+
+    /* Propiedades del navbar */
+    .navbar{
+        background-color: var(--color6);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 1;
+
+        width: 100%;
+        height: 100vh;
+        background-color:var(--color6);
+        height: max-content;
+        display: flex;
+        position: sticky; /* fija barra de navegación */
+        top: 0;
+        z-index: 100;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        overflow: hidden;
+        font-size: 25px;
+    }
+
+    .navbar ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        padding: 5px;
+        color:var(--color4)
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: var(--color4);
+    }
+
+    .navbar ul li:hover{
+        background: var(--color3);
+        transition:.2s;
+    }
+
+    .navbar ul li a:hover{
+        color: var(--color6);
+    }
+
+    .logo img{
+        height: 100px;
+        width: 100px;
+    }
+
+    /* Propiedades del banner */
+    .banner{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row:2;
+
+        background-image: url(../img/css.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-diseno{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row:2;
+
+        background-image: url(../img/diseno-web.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-hosting{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row:2;
+
+        background-image: url(../img/hosting.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-clientes{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row:2;
+
+        background-image: url(../img/background-clientes.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner-contacto{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row:2;
+
+        background-image: url(../img/contacto.png);
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color6);
+        flex-direction: column;
+        background-attachment:fixed /* Fijar el background-image */
+    }
+
+    .banner h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2.5rem;
+    }
+
+    .banner-diseno h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2.5rem;
+    }
+
+    .banner-hosting h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2.5rem;
+    }
+
+    .banner-clientes h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2.5rem;
+    }
+
+    .banner-contacto h1{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px; /* espaciado de letra */
+        font-size: 2.5rem;
+    }
+
+    /* Propiedades del main-content */
+    .main-content{
+        background-color: var(--color4);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .main-content-diseno{
+        background-color: var(--color4);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .main-content-hosting{
+        background-color: var(--color4);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .main-content-clientes{
+        background-color: var(--color4);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-contacto{
+        background-color: var(--color5);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-contacto form{
+        padding: 10px;
+    }
+
+    .main-content h2{
+        font-size:25px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-content p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-diseno h2{
+        font-size:25px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-content-diseno p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-hosting h2{
+        font-size:25px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-content-hosting p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .main-content-clientes img{
+        width: auto;
+        height: 300px;
+        margin: 20px;
+    }
+
+    /* Propiedades del footer */
+
+    #footer-mapa{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:4;
+        grid-row-end: 6;
+
+        background-color: var(--color4);
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #footer-lateral-superior{
+        background-color:var(--color4);
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        height: 200px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-lateral-inferior{
+        background-color:var(--color4);
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
+
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #footer-lateral-inferior ul li{
+        padding: 5px;
+        list-style: none;
+    }
+
+    #footer-lateral-inferior ul li a:link, a:visited, a:active{ /* Saca estilos al link */
+        color:var(--color6);
+        text-decoration: none;
+    }
+
+    /* Estilos del formulario de contacto */
+
+    .main-content-contacto{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+      
+    .main-content-contacto *{
+        box-sizing: border-box;
+    }
+      
+    .flex-form{
+        list-style: none;
+        padding: 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+      
+    .flex-form li{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+      
+    .flex-form > li:not(:last-child){
+        margin-bottom: 20px;
+    }
+      
+    .flex-form li label , .flex-form li p{
+        font-size: 16px;
+        padding: 4px;
+        font-weight: 300;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+    }
+      
+    .flex-form > li > label , .flex-form li p{
+        flex: 1 0 120px;
+        max-width: 220px;
+    }
+      
+    .flex-form > li > label + *{
+        flex: 1 0 220px;
+    }
+      
+    .flex-form li p{
+        margin: 0;
+    }
+      
+    .flex-form li input:not([type='checkbox']) , .flex-form li textarea{
+        padding: 15px;
+        border: none;
+    }
+      
+    .flex-form li button{
+        margin-left: auto;
+        padding: 8px 16px;
+        border: none;
+        background:var(--color7);
+        color: var(--color4);
+        text-transform: uppercase;
+        letter-spacing: .09em;
+        border-radius: 2px;
+    }
+
+}
+
+
+
+
+
+
