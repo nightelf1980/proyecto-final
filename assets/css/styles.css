@@ -156,6 +156,7 @@ body{
         text-align: center;
         letter-spacing: 2px; /* espaciado de letra */
         font-size: 1.5rem;
+        padding: 10px;
     }
 
     .banner-diseno h1{
