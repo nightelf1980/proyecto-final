@@ -183,6 +183,7 @@ body{
     .main-content{
         grid-row: 3;
         /* background-color: var(--color3); */
+        background: linear-gradient(to bottom, #ffd700,#fbfbfb);
         width: 100%;
         height: 300px;
         text-align: center;
@@ -193,6 +194,7 @@ body{
     .main-content-diseno{
         grid-row: 3;
         /* background-color: var(--color3); */
+        background: linear-gradient(to bottom, #F652A0,#fbfbfb);
         width: 100%;
         height: 300px;
         text-align: center;
@@ -201,6 +203,7 @@ body{
     }
 
     .main-content-hosting{
+        background: linear-gradient(to bottom, #3BA2DC,#fbfbfb);
         grid-row: 3;
         /* background-color: var(--color3); */
         width: 100%;
