@@ -213,7 +213,7 @@ body{
         box-sizing: border-box;
         grid-row: 3;
         background-color: var(--color4);
-        width: 80%;
+        width: auto;
         height: 300px;
         padding: 10px;
         text-align: center;
