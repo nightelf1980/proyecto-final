@@ -47,8 +47,8 @@ body{
         height: max-content;
         display: flex;
         flex-direction: column;
-        /* position: sticky;
-        top: 0; */
+        /* position: sticky; */
+        top: 0;
         z-index: 100;
         justify-content: center;
         align-items: center;
