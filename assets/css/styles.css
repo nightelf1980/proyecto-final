@@ -91,6 +91,11 @@ body{
         width: 95px;
     }
 
+    .logo img:hover{
+        transform: scale(1.05);
+        transition: all 0.5s;
+    }
+
     .banner{
         grid-row: 2;
         background-image: url(../img/css.png);
@@ -457,6 +462,11 @@ body{
         transition: all 0.5s;
     }
 
+    .logo img:hover{
+        transform: scale(1.075);
+        transition: all 0.5s;
+    }
+
     /* Propiedades del banner */
     .banner{
         grid-column-start: 2;
@@ -585,7 +595,8 @@ body{
 
     /* Propiedades del main-content */
     .main-content{
-        background-color: var(--color4);
+        /* background-color: var(--color4); */
+        background: linear-gradient(to bottom, #ffd700,#fbfbfb);
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
@@ -599,7 +610,8 @@ body{
     }
 
     .main-content-diseno{
-        background-color: var(--color4);
+        /* background-color: var(--color4); */       
+        background: linear-gradient(to bottom, #F652A0,#fbfbfb);
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
@@ -613,7 +625,8 @@ body{
     }
 
     .main-content-hosting{
-        background-color: var(--color4);
+        /* background-color: var(--color4); */
+        background: linear-gradient(to bottom, #3BA2DC,#fbfbfb);
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
@@ -641,7 +654,8 @@ body{
     }
 
     .main-content-contacto{
-        background-color: var(--color5);
+        /* background-color: var(--color5); */
+        background: linear-gradient(to bottom, #90ee90,#fbfbfb);
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
@@ -887,6 +901,11 @@ body{
         width: 100px;
     }
 
+    .logo img:hover{
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+
     /* Propiedades del banner */
     .banner{
         grid-column-start: 1;
@@ -1010,7 +1029,8 @@ body{
 
     /* Propiedades del main-content */
     .main-content{
-        background-color: var(--color4);
+        /* background-color: var(--color4); */
+        background: linear-gradient(to bottom, #ffd700,#fbfbfb);
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 3;
@@ -1018,7 +1038,8 @@ body{
     }
 
     .main-content-diseno{
-        background-color: var(--color4);
+        /* background-color: var(--color4); */
+        background: linear-gradient(to bottom, #F652A0,#fbfbfb);
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 3;
@@ -1026,7 +1047,8 @@ body{
     }
 
     .main-content-hosting{
-        background-color: var(--color4);
+        /* background-color: var(--color4); */
+        background: linear-gradient(to bottom, #3BA2DC,#fbfbfb);
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 3;
@@ -1048,7 +1070,8 @@ body{
     }
 
     .main-content-contacto{
-        background-color: var(--color5);
+        /* background-color: var(--color5); */
+        background: linear-gradient(to bottom, #90ee90,#fbfbfb);
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 3;
